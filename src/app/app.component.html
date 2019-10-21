@@ -1,8 +1,4 @@
-<div>
-  <!-- <button kendoButton (click)="onButtonClick()" [primary]="true">
-    Click Here
-  </button>   -->
-
+<!-- <div>
   <kendo-textbox-container floatingLabel="Your Full Name">    
     <input class="text-box" kendoTextBox>
     <kendo-datepicker 
@@ -24,8 +20,9 @@
       </mat-select>
     </mat-form-field>
 </div>
-<div class="table-container" fxLayout="column" fxFlexFill>
-  <kendo-grid class="table-dimension"
+<div fxLayout="column" fxFlexFill>
+  <kendo-grid class="table-container"
+  fxFlexFill
     [style.height.%]="100"
     [data]="sampleProducts" 
     [resizable]="true" 
@@ -62,5 +59,29 @@
         width="150">
       </kendo-grid-column>
   </kendo-grid>
+</div> -->
+<div fxLayout.lt-sm="column" fxLayoutGap="10px" fxLayout>
+  <mat-card class="mat-card">
+    <mat-card-header class="card-header" fxLayoutAlign="space-between center">
+      <mat-icon fxFlex="10">person</mat-icon>
+      <div fxFlex>
+        <span>Picture</span>
+        <kendo-upload
+        [saveUrl]="uploadSaveUrl"
+        [removeUrl]="uploadRemoveUrl">
+      </kendo-upload>
+      </div>
+      <mat-checkbox>Choose me</mat-checkbox>
+    </mat-card-header>
+    <mat-card-content class="mat-card-content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, voluptas necessitatibus magni facilis nulla libero
+      saepe. Cupiditate sit, dolores accusamus odio dolor asperiores non ab praesentium. Fugiat perferendis minima
+      aliquid.
+    </mat-card-content>
+    <mat-card-footer fxLayoutAlign="space-between center" fxLayout>
+      <span>Date: 15/12/2019</span>
+      <span>Username:Anant.Sapkota123</span>
+    </mat-card-footer>
+  </mat-card>
 </div>
 <router-outlet></router-outlet>

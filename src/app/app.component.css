@@ -11,4 +11,21 @@
   background-color: #3b94e2 !important;
   color: #fff;
 }
+
+.table-container {
+  height: calc(100vh - 85px);
+}
+
+.card-header {
+  background-color: #55b4ff;
+  margin: 0 !important;
+}
+
+.mat-card {
+  background-color: aquamarine;
+}
+
+.mat-card-content {
+  padding: 0.5em 0;
+}
 /*# sourceMappingURL=app.component.css.map */

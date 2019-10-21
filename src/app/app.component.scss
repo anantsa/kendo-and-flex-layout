@@ -1,20 +1,27 @@
 .text-box {
-    margin-bottom:5px;
+  margin-bottom: 5px;
 }
 .table-dimension {
-    .k-grid {
-        thead {
-            position: sticky;
-        }
+  .k-grid {
+    thead {
+      position: sticky;
     }
-    th.k-header {
-        background-color: rgb(59, 148, 226) !important;
-        color: #fff;
-    }
+  }
+  th.k-header {
+    background-color: rgb(59, 148, 226) !important;
+    color: #fff;
+  }
 }
-// .table-container {
-//     height: calc(100vh - 85px);
-// }
-
-
-
+.table-container {
+  height: calc(100vh - 85px);
+}
+.card-header {
+  background-color: #55b4ff;
+  margin: 0 !important;
+}
+.mat-card {
+  background-color: aquamarine;
+}
+.mat-card-content {
+  padding: 0.5em 0;
+}

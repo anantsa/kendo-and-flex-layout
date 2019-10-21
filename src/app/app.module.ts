@@ -10,6 +10,14 @@ import { GridModule, PDFModule, ExcelModule } from '@progress/kendo-angular-grid
 import { InputsModule } from '@progress/kendo-angular-inputs';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { MatSelectModule } from '@angular/material/select';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { UploadModule } from '@progress/kendo-angular-upload';
+import { HttpClientModule } from '@angular/common/http';
+
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -25,7 +33,14 @@ import { MatSelectModule } from '@angular/material/select';
     GridModule,
     InputsModule,
     DateInputsModule,
-    MatSelectModule
+    MatSelectModule,
+    MatCardModule,
+    MatIconModule,
+    MatCheckboxModule,
+    UploadModule,
+    HttpClientModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
