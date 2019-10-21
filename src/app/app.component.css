@@ -28,4 +28,12 @@
 .mat-card-content {
   padding: 0.5em 0;
 }
+
+.file-text-length-shortner {
+  display: block;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 /*# sourceMappingURL=app.component.css.map */

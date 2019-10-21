@@ -64,13 +64,80 @@
   <mat-card class="mat-card">
     <mat-card-header class="card-header" fxLayoutAlign="space-between center">
       <mat-icon fxFlex="10">person</mat-icon>
-      <div fxFlex>
-        <span>Picture</span>
-        <kendo-upload
-        [saveUrl]="uploadSaveUrl"
-        [removeUrl]="uploadRemoveUrl">
-      </kendo-upload>
+      <div fxLayout fxFlex>
+        <span>Picture:</span>
+        <span class="file-text-length-shortner" fxFlex>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Repellat,
+          tenetur.jpeg</span>
       </div>
+      <!-- <kendo-upload [saveUrl]="uploadSaveUrl" [removeUrl]="uploadRemoveUrl" #myUpload="kendoUpload" fxFlex>
+        <ng-template kendoUploadFileTemplate let-files let-state="state">
+          <div>Name: {{files[0].name}} Size: {{files[0].size}} bytes</div>
+          <button *ngIf="showButton(state)" (click)="remove(myUpload, files[0].uid)" class="k-button"
+            style="position: absolute; right: .2em;">
+            Remove
+          </button>
+        </ng-template>
+      </kendo-upload> -->
+      <mat-checkbox>Choose me</mat-checkbox>
+    </mat-card-header>
+    <mat-card-content class="mat-card-content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, voluptas necessitatibus magni facilis nulla libero
+      saepe. Cupiditate sit, dolores accusamus odio dolor asperiores non ab praesentium. Fugiat perferendis minima
+      aliquid.
+    </mat-card-content>
+    <mat-card-footer fxLayoutAlign="space-between center" fxLayout>
+      <span>Date: 15/12/2019</span>
+      <span>Username:Anant.Sapkota123</span>
+    </mat-card-footer>
+  </mat-card>
+  <mat-card class="mat-card">
+    <mat-card-header class="card-header" fxLayoutAlign="space-between center">
+      <mat-icon fxFlex="10">person</mat-icon>
+      <div fxLayout fxFlex>
+        <span>Picture:</span>
+        <span class="file-text-length-shortner">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
+          tenetur.jpeg</span>
+      </div>
+      <!-- <kendo-upload [saveUrl]="uploadSaveUrl" [removeUrl]="uploadRemoveUrl" #myUpload="kendoUpload" fxFlex>
+        <ng-template kendoUploadFileTemplate let-files let-state="state">
+          <div>Name: {{files[0].name}} Size: {{files[0].size}} bytes</div>
+          <button *ngIf="showButton(state)" (click)="remove(myUpload, files[0].uid)" class="k-button"
+            style="position: absolute; right: .2em;">
+            Remove
+          </button>
+        </ng-template>
+      </kendo-upload> -->
+      <mat-checkbox>Choose me</mat-checkbox>
+    </mat-card-header>
+    <mat-card-content class="mat-card-content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, voluptas necessitatibus magni facilis nulla libero
+      saepe. Cupiditate sit, dolores accusamus odio dolor asperiores non ab praesentium. Fugiat perferendis minima
+      aliquid.
+    </mat-card-content>
+    <mat-card-footer fxLayoutAlign="space-between center" fxLayout>
+      <span>Date: 15/12/2019</span>
+      <span>Username:Anant.Sapkota123</span>
+    </mat-card-footer>
+  </mat-card>
+  <mat-card class="mat-card">
+    <mat-card-header class="card-header" fxLayoutAlign="space-between center">
+      <mat-icon fxFlex="10">person</mat-icon>
+      <div fxLayout fxFlex>
+        <span>Picture:</span>
+        <span class="file-text-length-shortner" fxFlex>------->>>>>>>>>>>>>Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Repellat,
+          tenetur.jpeg</span>
+      </div>
+      <!-- <kendo-upload [saveUrl]="uploadSaveUrl" [removeUrl]="uploadRemoveUrl" #myUpload="kendoUpload" fxFlex>
+        <ng-template kendoUploadFileTemplate let-files let-state="state">
+          <div>Name: {{files[0].name}} Size: {{files[0].size}} bytes</div>
+          <button *ngIf="showButton(state)" (click)="remove(myUpload, files[0].uid)" class="k-button"
+            style="position: absolute; right: .2em;">
+            Remove
+          </button>
+        </ng-template>
+      </kendo-upload> -->
       <mat-checkbox>Choose me</mat-checkbox>
     </mat-card-header>
     <mat-card-content class="mat-card-content">
