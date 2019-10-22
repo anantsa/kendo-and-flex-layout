@@ -17,8 +17,9 @@
 }
 
 .card-header {
-  background-color: #55b4ff;
-  margin: 0 !important;
+  background-color: #e2fb5b;
+  padding: 1em;
+  border-bottom: 2px solid black;
 }
 
 .mat-card {
@@ -29,11 +30,19 @@
   padding: 0.5em 0;
 }
 
-.file-text-length-shortner {
-  display: block;
-  width: 150px;
+.two-text {
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
+  font-style: italic;
+}
+
+.two-text::before {
+  content: ":";
+}
+
+.one-text {
+  font-weight: bold;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=app.component.css.map */

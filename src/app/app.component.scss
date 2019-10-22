@@ -16,8 +16,9 @@
   height: calc(100vh - 85px);
 }
 .card-header {
-  background-color: #55b4ff;
-  margin: 0 !important;
+  background-color: #e2fb5b;
+  padding: 1em;
+  border-bottom: 2px solid black;
 }
 .mat-card {
   background-color: aquamarine;
@@ -25,10 +26,22 @@
 .mat-card-content {
   padding: 0.5em 0;
 }
-.file-text-length-shortner {
-  display: block;
-  width: 150px;
+.two-text {
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
+  font-style: italic;
+  &::before {
+    content: ":";
+  }
 }
+.one-text {
+  // white-space: nowrap;
+  // text-overflow: ellipsis;
+  // overflow: hidden;
+  font-weight: bold;
+  text-decoration: underline;
+}
+// .fit-content-for-ellipsis {
+//   grid-template-columns: fit-content(300px) 1fr;
+// }

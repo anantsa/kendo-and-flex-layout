@@ -75,6 +75,18 @@ export class UploadInterceptor implements HttpInterceptor {
     return next.handle(req);
   }
 }
+// export class UploadComponent {
+//   uploadSaveUrl = 'saveUrl'; // should represent an actual API endpoint
+//   uploadRemoveUrl = 'removeUrl'; // should represent an actual API endpoint
+
+//   public remove(upload, uid: string) {
+//     upload.removeFilesByUid(uid);
+//   }
+
+//   public showButton(state: FileState): boolean {
+//     return (state === FileState.Uploaded) ? true : false;
+//   }
+// }
 
 
 
