@@ -1,128 +1,129 @@
-<!-- <div>
-  <kendo-textbox-container floatingLabel="Your Full Name">    
-    <input class="text-box" kendoTextBox>
-    <kendo-datepicker 
-      [formatPlaceholder]="{year: 'Y', month:'M', day:'D'}" 
-      [navigation]="false" 
-      [readonly]="false"      
-      [min]="min" 
-      [max]="max" 
-      (click)="dateChange()" 
-      [format]="'dd-MM-yyyy'">
-    </kendo-datepicker>
-  </kendo-textbox-container>
-  <mat-form-field>
-      <mat-label>Cars</mat-label>
-      <mat-select disableOptionCentering panelClass ="mat-select-push-below" matNativeControl required>
-        <mat-option value="toyota">Toyota</mat-option>
-        <mat-option value="toyotaA">Toyota A</mat-option>
-        <mat-option value="toyotaB">Toyota B</mat-option>
-      </mat-select>
-    </mat-form-field>
-</div>
-<div fxLayout="column" fxFlexFill>
-  <kendo-grid class="table-container"
-  fxFlexFill
-    [style.height.%]="100"
-    [data]="sampleProducts" 
-    [resizable]="true" 
-    [pageSize]="5"
-    [reorderable]="true" fxFlex="100%">    
-      <kendo-grid-column 
-        [headerStyle]="{'background-color':'rgb(59, 148, 226)', 'color': '#fff'}"
-        title="ID" 
-        field="ProductID" 
-        width="40">
-      </kendo-grid-column>
-      <kendo-grid-column 
-        [headerStyle]="{'background-color':'rgb(59, 148, 226)', 'color': '#fff'}"
-        title="Product Name" 
-        field="ProductName" 
-        width="120">
-      </kendo-grid-column> 
-      <kendo-grid-column 
-        [headerStyle]="{'background-color':'rgb(59, 148, 227)', 'color': '#fff'}"
-        title="Supplier ID" 
-        field="SupplierID" 
-        width="100">
-      </kendo-grid-column>
-      <kendo-grid-column 
-        [headerStyle]="{'background-color':'rgb(59, 148, 226)', 'color': '#fff'}"
-        title="Category" 
-        field="Category.CategoryName" 
-        width="100">
-      </kendo-grid-column>
-      <kendo-grid-column 
-        [headerStyle]="{'background-color':'rgb(59, 148, 226)', 'color': '#fff'}"
-        title="Description" 
-        field="Category.Description" 
-        width="150">
-      </kendo-grid-column>
-  </kendo-grid>
+<!-- <router-outlet></router-outlet>
+<div fxLayout="row" fxlayoutAlign="start center" fxLayoutGap="10px">
+  <div fxFlex="33">
+    <div class="box">
+      <div class="box-title" fxLayout="row" fxlayoutAlign="start center">
+        <mat-icon fxFlex="24px">person</mat-icon>
+        <div fxFlex>
+          <span>
+            file
+          </span>
+          <span>
+            image:form io document
+          </span>
+        </div>
+        <mat-checkbox fxFlex="24px"></mat-checkbox>
+      </div>
+      <div class="box-content">
+        this is content
+      </div>
+      <div class="box-footer">
+        this is footer
+      </div>
+    </div>
+  </div>
+  <div fxFlex="33">
+
+  </div>
+  <div fxFlex="33">
+
+  </div>
 </div> -->
-<div fxLayout.lt-sm="column" fx fxLayoutGap="10px" style="padding:5px;box-sizing: border-box" fxLayout>
-  <mat-card class="mat-card">
-    <div class="mat-class-header-text card-header" fxLayoutAlign="space-between center">
-      <mat-icon>person</mat-icon>
-      <div gdAreas="title content" fxFlex>
-        <span gdArea="title" class="one-text">Moreeee Picture</span>
-        <span gdArea="content" class="two-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod
-          ullam incidunt dolor. Rem adipisci dolores a nostrum nobis, quod nam, ipsam blanditiis, recusandae voluptatum
-          ad! Aut reiciendis aliquam quia.</span>
-      </div>
-      <mat-checkbox>Choose me</mat-checkbox>
-    </div>
-    <mat-card-content class="mat-card-content">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, voluptas necessitatibus magni facilis nulla libero
-      saepe. Cupiditate sit, dolores accusamus odio dolor asperiores non ab praesentium. Fugiat perferendis minima
-      aliquid.
-    </mat-card-content>
-    <mat-card-footer fxLayoutAlign="space-between center" fxLayout>
-      <span>Date: 15/12/2019</span>
-      <span>Username:Anant.Sapkota123</span>
-    </mat-card-footer>
-  </mat-card>
-  <mat-card class="mat-card">
-    <div class="mat-class-header-text card-header" fxLayoutAlign="space-between center">
-      <mat-icon>person</mat-icon>
-      <div gdAreas="title content" fxFlex>
-        <span gdArea="title" class="one-text">File</span>
-        <span gdArea="content" class="two-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod
-          ullam incidunt dolor. Rem adipisci dolores a nostrum nobis, quod nam, ipsam blanditiis, recusandae voluptatum
-          ad! Aut reiciendis aliquam quia.</span>
-      </div>
-      <mat-checkbox>Choose me</mat-checkbox>
-    </div>
-    <mat-card-content class="mat-card-content">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, voluptas necessitatibus magni facilis nulla libero
-      saepe. Cupiditate sit, dolores accusamus odio dolor asperiores non ab praesentium. Fugiat perferendis minima
-      aliquid.
-    </mat-card-content>
-    <mat-card-footer fxLayoutAlign="space-between center" fxLayout>
-      <span>Date: 15/12/2019</span>
-      <span>Username:Anant.Sapkota123</span>
-    </mat-card-footer>
-  </mat-card>
-  <mat-card class="mat-card">
-    <div class="mat-class-header-text card-header" fxLayoutAlign="space-between center">
-      <mat-icon>person</mat-icon>
-      <div gdAreas="title content" fxFlex>
-        <span gdArea="title" class="one-text">Form IO Document</span>
-        <span gdArea="content" class="two-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quod
-          ullam incidunt dolor. Rem adipisci dolores a nostrum nobis, quod nam, ipsam blanditiis, recusandae voluptatum
-          ad! Aut reiciendis aliquam quia.</span>
-      </div>
-      <mat-checkbox>Choose me</mat-checkbox>
-    </div>
-    <mat-card-content class="mat-card-content">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, voluptas necessitatibus magni facilis nulla libero
-      saepe. Cupiditate sit, dolores accusamus odio dolor asperiores non ab praesentium. Fugiat perferendis minima
-      aliquid.
-    </mat-card-content>
-    <mat-card-footer fxLayoutAlign="space-between center" fxLayout>
-      <span>Date: 15/12/2019</span>
-      <span>Username:Anant.Sapkota123</span>
-    </mat-card-footer>
-  </mat-card>
+
+<!-- <div class="sidebar {{fullWidthCondition ? 'full-width' : 'collapsed-width'}}">
+  <mat-icon class="nav-icon" (click)="expand()">menu</mat-icon>
+  <ul>
+    <li fxLayout fxLayoutAlign="start center">
+      <mat-icon color="primary">home</mat-icon>
+      <span class="menu-item">Home</span>
+    </li>
+    <li fxLayout fxLayoutAlign="start center">
+      <mat-icon color="primary">person</mat-icon>
+      <span class="menu-item">About Us</span>
+    </li>
+    <li fxLayout fxLayoutAlign="start center">
+      <mat-icon color="primary">collections</mat-icon>
+      <span class="menu-item">Gallery</span>
+    </li>
+  </ul>
 </div>
-<router-outlet></router-outlet>
+<div class="sidebar-new">
+  <mat-icon class="nav-icon">menu</mat-icon>
+  <ul>
+    <li fxLayout fxLayoutAlign="start center">
+      <mat-icon color="primary">home</mat-icon>
+      <span class="menu-item">Home</span>
+    </li>
+    <li fxLayout fxLayoutAlign="start center">
+      <mat-icon color="primary">person</mat-icon>
+      <span class="menu-item">About Us</span>
+    </li>
+    <li fxLayout fxLayoutAlign="start center">
+      <mat-icon color="primary">collections</mat-icon>
+      <span class="menu-item">Gallery</span>
+    </li>
+  </ul>
+</div> -->
+<div>
+  <mat-form-field class="input-chip-list">
+    <mat-chip-list #chipList>
+      <mat-chip *ngFor="let fruit of fruits" [selectable]="selectable" [removable]="removable"
+        (removed)="remove(fruit)">
+        {{fruit}}
+        <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+      </mat-chip>
+
+      <input placeholder="New fruit..." #fruitInput [formControl]="fruitCtrl" [matAutocomplete]="auto"
+        [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+        [matChipInputAddOnBlur]="addOnBlur" (matChipInputTokenEnd)="add($event)">
+    </mat-chip-list>
+
+    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+      <mat-option *ngFor="let fruit of filteredFruits | async" [value]="fruit">
+        {{fruit}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+  <button mat-raised-button [matMenuTriggerFor]="rootMenu">Here</button>
+  <mat-menu #rootMenu="matMenu">
+    <ul>
+      <li class="drop-item">
+        <div matRipple class="drop-item-content" fxLayout="column" fxLayoutAlign="center center">
+          <mat-icon color="accent" class="med-icon-size">person</mat-icon>
+          <span>Person</span>
+        </div>
+      </li>
+      <li class="drop-item">
+        <div matRipple class="drop-item-content" fxLayout="column" fxLayoutAlign="center center">
+          <mat-icon color="primary" class="med-icon-size">alarm</mat-icon>
+          <span>Time</span>
+        </div>
+      </li>
+      <li class="drop-item">
+        <div matRipple class="drop-item-content" fxLayout="column" fxLayoutAlign="center center">
+          <mat-icon color="warn" class="med-icon-size">credit_card</mat-icon>
+          <span>Shop</span>
+        </div>
+      </li>
+      <li class="drop-item">
+        <div matRipple class="drop-item-content" fxLayout="column" fxLayoutAlign="center center">
+          <mat-icon color="primary" class="med-icon-size">assignment</mat-icon>
+          <span>Work</span>
+        </div>
+      </li>
+      <li class="drop-item">
+        <div matRipple class="drop-item-content" fxLayout="column" fxLayoutAlign="center center">
+          <mat-icon color="accent" class="med-icon-size">calendar_today</mat-icon>
+          <span>Schedule</span>
+        </div>
+      </li>
+      <li class="drop-item">
+        <div matRipple class="drop-item-content" fxLayout="column" fxLayoutAlign="center center">
+          <mat-icon color="warn" class="med-icon-size">grade</mat-icon>
+          <span>Favorites</span>
+        </div>
+      </li>
+      <div class="clear-fix"></div>
+    </ul>
+  </mat-menu>
+</div>

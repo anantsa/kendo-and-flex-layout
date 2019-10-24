@@ -15,6 +15,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { UploadModule } from '@progress/kendo-angular-upload';
 import { HttpClientModule } from '@angular/common/http';
+import { MatChipsModule } from '@angular/material/chips';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+import { MatRippleModule } from '@angular/material/core';
+
+
 
 
 
@@ -38,7 +46,15 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatCheckboxModule,
     UploadModule,
-    HttpClientModule
+    HttpClientModule,
+    MatChipsModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatAutocompleteModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatRippleModule
+    
 
 
   ],

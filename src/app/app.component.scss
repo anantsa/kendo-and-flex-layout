@@ -22,26 +22,143 @@
 }
 .mat-card {
   background-color: aquamarine;
+  width: 100vh;
 }
 .mat-card-content {
   padding: 0.5em 0;
 }
-.two-text {
+span.two-text {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-style: italic;
   &::before {
     content: ":";
   }
 }
 .one-text {
-  // white-space: nowrap;
-  // text-overflow: ellipsis;
-  // overflow: hidden;
   font-weight: bold;
   text-decoration: underline;
+  word-break: break-all;
+  text-align: left;
 }
-// .fit-content-for-ellipsis {
-//   grid-template-columns: fit-content(300px) 1fr;
-// }
+.title-container {
+  overflow: hidden;
+}
+
+.sidebar {
+  background-color: #96f38b;
+  padding: 10px;
+  height: 100%;
+  float: left;
+  .menu-item {
+    width: 100%;
+    margin-left: 8px;
+  }
+
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 1em 0;
+    }
+  }
+  &::after {
+    clear: both;
+  }
+}
+.sidebar-new {
+  width: 25px;
+  background-color: #e2fb5b;
+  padding: 10px;
+  height: 100%;
+  float: left;
+  .menu-item {
+    width: 100%;
+    margin-left: 8px;
+    display: none;
+  }
+
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 1em 0;
+    }
+  }
+  &::after {
+    clear: both;
+  }
+}
+.sidebar-new:hover {
+  width: 150px;
+}
+
+.sidebar.full-width {
+  width: 150px;
+  transition: 0.1s ease-in;
+  .nav-icon {
+    color: red;
+    transform: rotate(180deg);
+    transition: 0.4s ease-in;
+  }
+  .menu-item {
+    display: block;
+    transition: 0.4s ease-in 200ms;
+  }
+}
+.sidebar.collapsed-width {
+  width: 25px;
+  transition: 0.5s ease-out;
+  .nav-icon {
+    transform: rotate(0deg);
+    transition: 0.4s ease-out;
+  }
+  .menu-item {
+    display: none;
+  }
+}
+
+.newStyle {
+  background-color: red;
+}
+.defaultStyle {
+  background-color: #96f38b;
+}
+.nav-icon {
+  cursor: pointer;
+}
+.side-nav-items {
+  color: red;
+}
+
+// chiplist
+.input-chip-list {
+  width: 100%;
+}
+ul {
+  list-style: none;
+  padding: 0 1em;
+  .med-icon-size {
+    transform: scale(1.2);
+    margin-bottom: 10px;
+  }
+  li {
+    float: left;
+    cursor: pointer;
+    margin: 1px;
+    width: 80px;
+    height: 80px;
+    span {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+  .drop-item-content {
+    // border: 1px solid rgb(255, 236, 236);
+    padding: 1em 10px;
+  }
+}
+.clear-fix {
+  clear: both;
+}

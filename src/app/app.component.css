@@ -24,25 +24,177 @@
 
 .mat-card {
   background-color: aquamarine;
+  width: 100vh;
 }
 
 .mat-card-content {
   padding: 0.5em 0;
 }
 
-.two-text {
+span.two-text {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-style: italic;
 }
 
-.two-text::before {
+span.two-text::before {
   content: ":";
 }
 
 .one-text {
   font-weight: bold;
   text-decoration: underline;
+  word-break: break-all;
+  text-align: left;
+}
+
+.title-container {
+  overflow: hidden;
+}
+
+.sidebar {
+  background-color: #96f38b;
+  padding: 10px;
+  height: 100%;
+  float: left;
+}
+
+.sidebar .menu-item {
+  width: 100%;
+  margin-left: 8px;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar ul li {
+  list-style: none;
+  margin: 1em 0;
+}
+
+.sidebar::after {
+  clear: both;
+}
+
+.sidebar-new {
+  width: 25px;
+  background-color: #e2fb5b;
+  padding: 10px;
+  height: 100%;
+  float: left;
+}
+
+.sidebar-new .menu-item {
+  width: 100%;
+  margin-left: 8px;
+  display: none;
+}
+
+.sidebar-new ul {
+  padding: 0;
+}
+
+.sidebar-new ul li {
+  list-style: none;
+  margin: 1em 0;
+}
+
+.sidebar-new::after {
+  clear: both;
+}
+
+.sidebar-new:hover {
+  width: 150px;
+}
+
+.sidebar.full-width {
+  width: 150px;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.sidebar.full-width .nav-icon {
+  color: red;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+
+.sidebar.full-width .menu-item {
+  display: block;
+  -webkit-transition: 0.4s ease-in 200ms;
+  transition: 0.4s ease-in 200ms;
+}
+
+.sidebar.collapsed-width {
+  width: 25px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.sidebar.collapsed-width .nav-icon {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.sidebar.collapsed-width .menu-item {
+  display: none;
+}
+
+.newStyle {
+  background-color: red;
+}
+
+.defaultStyle {
+  background-color: #96f38b;
+}
+
+.nav-icon {
+  cursor: pointer;
+}
+
+.side-nav-items {
+  color: red;
+}
+
+.input-chip-list {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0 1em;
+}
+
+ul .med-icon-size {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  margin-bottom: 10px;
+}
+
+ul li {
+  float: left;
+  cursor: pointer;
+  margin: 1px;
+  width: 80px;
+  height: 80px;
+}
+
+ul li span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+ul .drop-item-content {
+  padding: 1em 10px;
+}
+
+.clear-fix {
+  clear: both;
 }
 /*# sourceMappingURL=app.component.css.map */
