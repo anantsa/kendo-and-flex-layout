@@ -22,6 +22,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRippleModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MoodalComponent, Moodal } from './moodal/moodal.component';
+import { KendoTableComponent } from './kendo-table/kendo-table.component';
 
 
 
@@ -29,7 +31,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MoodalComponent,
+    Moodal,
+    KendoTableComponent
   ],
   imports: [
     BrowserModule,
@@ -61,6 +66,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [MoodalComponent, Moodal]
 })
 export class AppModule { }
