@@ -18,9 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatChipsModule } from '@angular/material/chips';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatButtonModule} from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
 import { MatRippleModule } from '@angular/material/core';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -53,8 +54,9 @@ import { MatRippleModule } from '@angular/material/core';
     MatAutocompleteModule,
     MatMenuModule,
     MatButtonModule,
-    MatRippleModule
-    
+    MatRippleModule,
+    MatDialogModule
+
 
 
   ],
