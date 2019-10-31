@@ -24,8 +24,9 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MoodalComponent, Moodal } from './moodal/moodal.component';
 import { KendoTableComponent } from './kendo-table/kendo-table.component';
-
-
+import { DropMenuComponent } from './drop-menu/drop-menu.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatInputModule } from '@angular/material/input';
 
 
 
@@ -34,7 +35,8 @@ import { KendoTableComponent } from './kendo-table/kendo-table.component';
     AppComponent,
     MoodalComponent,
     Moodal,
-    KendoTableComponent
+    KendoTableComponent,
+    DropMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -60,10 +62,9 @@ import { KendoTableComponent } from './kendo-table/kendo-table.component';
     MatMenuModule,
     MatButtonModule,
     MatRippleModule,
-    MatDialogModule
-
-
-
+    MatDialogModule,
+    MatTableModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],
