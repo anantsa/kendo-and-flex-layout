@@ -1,8 +1,8 @@
 <div mat-dialog-content >
-    <h4>New Entries</h4>
+    <h4 class="table-title">New Entries</h4>
     <app-kendo-table></app-kendo-table>
 </div>
-<div mat-dialog-actions>
+<div fxLayoutAlign="flex-end" mat-dialog-actions>
     <button mat-button (click)="onNoClick()" color="warn">
         <mat-icon>close</mat-icon>
         Close

@@ -2,4 +2,8 @@ kendo-grid {
   height: calc(100vh - 308px);
   min-height: 100px;
 }
+
+.table-title {
+  margin-top: 0;
+}
 /*# sourceMappingURL=kendo-table.component.css.map */

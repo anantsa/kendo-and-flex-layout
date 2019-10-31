@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,MAAM,EAAE,mBAAmB;EAC3B,UAAU,EAAE,KAAK;CAClB",
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,MAAM,EAAE,mBAAmB;EAC3B,UAAU,EAAE,KAAK;CAClB;;AACA,AAAA,YAAY,CAAC;EACX,UAAU,EAAE,CAAC;CACd",
     "sources": [
         "kendo-table.component.scss"
     ],
